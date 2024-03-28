@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Pleasanton Real Estate | Julie Hansen Partnership</title>
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+</head>
+<body>
+    <header class="d-flex justify-content-center align-items-center text-light">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="navbar">
+            <div class="container-fluid">
+                <a class="navbar-brand d-lg-none" href="#">
+                    <img src="jhsereno-light.png" alt="jhsereno logo" height="20" width="150">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-lg-flex justify-content-between align-items-center" id="navbarNav">
+                    <a class="navbar-brand d-none d-lg-block" href="#">
+                        <img src="jhsereno-light.png" alt="jhsereno logo" height="20" width="150">
+                    </a>
+                    <ul class="navbar-nav uppercase text-xs">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#meet-the-team">Meet the team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#search-for-homes">search for homes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#our-communities">our communities</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home-evaluation">home evaluation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home-across-america">home across america</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#testimonials">testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact-us" data-bs-toggle="modal" data-bs-target="#exampleModal">contact us</a>
+                        </li>
+                    </ul>
+                    <div class="navbar-brand">
+                        <div class="nav-item dropstart">
+                            <a class="nav-link navbar-toggler-icon" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="https://hansenpartners.net/">
+                                    <i class="bi bi-house-door mr-px"></i>Home
+                                </a>
+                                <div role="separator" class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="#Appointment" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <i class="bi bi-journal-bookmark mr-px"></i>Book An Appointment
+                                </a>
+                                <div role="separator" class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="https://hansenpartners.net/home-search/listings">
+                                    <i class="bi bi-search mr-px"></i>Search in your Area
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="modal fade z-index" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content" style="padding: 5vh;">
+                    <div class="flex">
+                        <div class="width text-center" style="margin-right: 5vh;">
+                            <img class="img-fluid" src="icon123.png" width="230" alt="organize" style="margin-top: 50px;">
+                            <div class="header-title3 uppercase" style="padding-top:0.7vh;">address | contact information</div>
+                            <div class="sub-content6">(925) 553-6707
+                            luxuryhomesinwc@icloud.com
+                            <br>
+                            4337 Chabot Drive, Pleasanton, 
+                            CA 94588Julie Hansen-Orvis
+                            <br>
+                            CA DRE# 00934447
+                            </div>
+                        </div>
+                        <div class="width">
+                            <div class="sub-content7 text-center uppercase pb-5 display-6 mb-5 px-4">Get in touch</div>
+                            <form style="margin-top:-50px; color: #000;">
+                                <div class="form-group" style="margin: 5px;">
+                                  <label for="exampleInputEmail1">Name</label>
+                                  <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
+                                </div>
+                                <div class="form-group" style="margin: 5px;">
+                                    <label for="exampleInputEmail1">Phone</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Phone">
+                                </div>
+                                <div class="form-group" style="margin: 5px;">
+                                    <label for="exampleInputEmail1">Email</label>
+                                    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
+                                </div>
+                                <div class="form-group" style="margin: 5px;">
+                                  <label for="exampleInputPassword1">Message</label>
+                                  <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Message">
+                                </div>
+                                <div class="mb-3 form-check" style="padding-top: 10px;">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1" style="font-size: 1.2vh;" >
+                                        By providing Julie Hansen Partnership your contact information, you acknowledge and agree to our <a href="https://hansenpartners.net/terms-and-conditions" style="color:#000;">Privacy Policy</a> and consent to receiving marketing communications, including through automated calls, texts, and emails, some of which may use artificial or prerecorded voices. This consent isn’t necessary for purchasing any products or services and you may opt out at any time. To opt out from texts, you can reply, ‘stop’ at any time. To opt out from emails, you can click on the unsubscribe link in the emails. Message and data rates may apply.</label>
+                                </div>
+                                <button type="submit" class="btn btn-dark" style="">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div>
+            <h1 class="text-services">Services</h1>
+        </div>
+    </header>
+
+    <section class="py-5 my-5">
+        <div class="container">
+            <h1 class="text-center uppercase pb-5 display-6 mb-5 px-4">Comprehensive Marketing Plan</h1>
+            <div class="flex place-content-center pd-vh mt-negative">
+                <div class="card width m-vh">
+                    <div class="row g-0">
+                        <div class="col-5 col-sm-4">
+                            <img src="message.jpg" class="img-fluid w-100" alt="card-horizontal-image">
+                        </div>
+                        <div class="col-7 col-sm-8">
+                            <div class="card-body">
+                                <div class="card-title card-title-font-size">Responsive</div>
+                                <p class="card-text card-text-font-size">I am always available via phone, text, or email.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card width m-vh">
+                    <div class="row g-0">
+                        <div class="col-5 col-sm-4">
+                            <img src="flag.jpg" class="img-fluid w-100" alt="card-horizontal-image">
+                        </div>
+                        <div class="col-7 col-sm-8">
+                            <div class="card-body">
+                                <div class="card-title card-title-font-size">Syndication</div>
+                                <p class="card-text card-text-font-size">I market your property locally, nationally, and internationally</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="flex place-content-center pd-vh mt-negative">
+                <div class="card width m-vh">
+                    <div class="row g-0">
+                        <div class="col-5 col-sm-4">
+                            <img src="map.jpg" class="img-fluid w-100" alt="card-horizontal-image">
+                        </div>
+                        <div class="col-7 col-sm-8">
+                            <div class="card-body">
+                                <div class="card-title card-title-font-size">Virtual Tour</div>
+                                <p class="card-text card-text-font-size">Let's make your home stand out with a high quality virtual tour.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card width m-vh">
+                    <div class="row g-0">
+                        <div class="col-5 col-sm-4">
+                            <img src="image.jpg" class="img-fluid w-100" alt="card-horizontal-image">
+                        </div>
+                        <div class="col-7 col-sm-8">
+                            <div class="card-body">
+                                <div class="card-title card-title-font-size">Photography</div>
+                                <p class="card-text card-text-font-size">Beatiful, high-end photography is a central part of our marketing plan for your property.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="home-interior py-5 my-5">
+        <div class="container w-75 position-relative" style="max-width: 600px;">
+        </div>
+    </section>
+
+    <section class="py-5 my-5">
+        <div class="container">
+            <h1 class="text-center uppercase pb-5 display-6 mb-5 px-4">Decor Guidance | My Staging Expertise | Intentional Layout</h1>
+            <div class="flex place-content-center pd-vh mt-negative">
+                <div class="width m-vh">
+                    <div class="row g-0">
+                        <div class="" style="margin-top: 50px;">
+                            <div class="sub-content">Unclutter and organize your home</div>
+                            <div class="sub-content">Neatly arrange drawers and cabinets</div>
+                            <div class="sub-content">Keep pets outdoors or off the premises</div>
+                            <div class="sub-content">Play soft music</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="width m-vh">
+                    <div class="row g-0">
+                        <marquee  behavior="slide" direction="left" loop="1" class="width">
+                            <img class="img-fluid" src="organize.jpg" width="800" alt="organize">
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+            <div class="flex place-content-center pd-vh mt-negative">
+                <div class="width m-vh">
+                    <div class="row g-0">
+                        <marquee  behavior="slide" direction="up" loop="1" class="width">
+                            <img class="img-fluid" src="organize1.jpg" width="800" alt="organize">
+                        </marquee>
+                    </div>
+                </div>
+                <div class="width m-vh">
+                    <div class="row g-0">
+                        <div class="">
+                            <div class="sub-content1">Choose Your Decor Style</div>
+                            <div class="sub-content1">Create A Plan</div>
+                            <div class="sub-content1">Choose a Color Palette</div>
+                            <div class="sub-content1">Take Advice From The Experts</div>
+                            <div class="sub-content1">Have It Flow</div>
+                            <div class="sub-content1">Choose Your Essential Pieces</div>
+                            <div class="sub-content1">Don't Forget The Photos</div>
+                            <div class="sub-content1">Be Sure To Add Your Own Personal Touch</div>
+                            <div class="sub-content1">Let It Grow, Over Time</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-interior2 py-5 my-5">
+        <div class="container w-75 position-relative" style="max-width: 600px;">
+        </div>
+    </section>
+
+    <section class="py-5 my-5">
+        <div class="container">
+            <div class="flex">
+                <h1 class="text-center uppercase pb-5 display-6 mb-5 px-4" style=" margin-top: 50px; margin-left: -120px; margin-right: 100px; padding: 100px; padding-top: 125px; background-color: #000; color: #fff;"><span style="margin-left:30px;">The Selling Process</span></h1>
+                <canvas id="myChart" style="width:100%; max-width:800px;"></canvas>
+            </div>
+           
+        </div>
+    </section>
+
+    <section class="home-interior3 py-5 my-5">
+        <div class="container w-75 position-relative" style="max-width: 600px;">
+        </div>
+    </section>
+    
+    <section class="py-5 my-5">
+        <div class="container">
+            <div class="flex">
+                <canvas id="myChart2" style="width:100%; max-width:800px;"></canvas>
+                <h1 class="text-center uppercase pb-5 display-6 mb-5 px-4" style=" margin-top: 50px; margin-left: 100px; margin-right: -110px; padding: 100px; padding-top: 125px; background-color: #000; color: #fff;"><span style="margin-right:30px;">The Buying Process</span></h1>
+            </div>
+            
+        </div>
+    </section>
+
+    <section class="home-interior4 py-5 my-5">
+        <div class="container w-75 position-relative" style="max-width: 600px;">
+        </div>
+    </section>
+
+    <section class="py-5 my-5">
+        <div class="container">
+            <h1 class="text-center uppercase pb-5 display-6 mb-5 px-4">Over 33 Years of Real Estate Success</h1>
+            <div class="sub-content2">We provide every one of our clients with a level of service they won’t find anywhere else. We give them what they need, often before they know they need it. ​​​​​​​In real estate, almost everything can be negotiated. When you choose Hansen Partners It is experience is 100% nonnegotiable. ​​​​​​​ ​​​​​​​And it’s an experience like no other.</div>
+            <div class="flex place-content-center pd-vh">
+                <div class="width m-vh">
+                    <div class="row g-0">
+                        <marquee  behavior="slide" direction="down" loop="1" class="width">
+                            <img class="img-fluid" src="marketing.jpg" width="800" alt="organize">
+                        </marquee>
+                    </div>
+                </div>
+                <div class="width m-vh">
+                    <div class="row g-0">
+                        <div class="">
+                            <div class="header-title">We Want To Create An Unforgettable Experience For You...</div>
+                            <div class="sub-content3">We combine data gained from your home’s Comparative Market Analysis with local market research to create a marketing plan designed to help you meet your selling goals. Your home’s carefully designed plan will include a range of online, print, and other marketing tools targeted to the best-qualified pool of buyers. ​​​​​​​ Successfully marketing a home in today’s real estate environment requires a firm with experience and flexibility. Hansen Partners provides both.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-interior5 py-5 my-5">
+        <div class="container w-75 position-relative" style="max-width: 600px;">
+        </div>
+    </section>
+
+    <section class="py-5 my-5">
+        <div class="container">
+            <h1 class="text-center uppercase pb-5 display-6 mb-5 px-4">The Hansen Partners Communications Tablet</h1>
+            <div class="sub-content2">We have created this as a wonderful tool so that we can communicate with you daily, provide you with updates on what is happening with your home. We are available at the with a click of your tablet.</div>
+            <div class="flex place-content-center pd-vh">
+                <div class="width m-vh">
+                    <div class="row g-0">
+                        <div class="">
+                            <div class="header-title2">Benefits:</div>
+                            <div class="sub-content4">Review all documents and sign in the comfort of your home or anywhere.</div>
+                            <div class="sub-content4">Stay up to date on all marketing activities, review materials, photos, etc. in real time.</div>
+                            <div class="sub-content4">Meet with us face to face on our Gotomeeting.com platform to go over and discuss the events of the week.</div>
+                            <div class="sub-content4">You have your own email assigned just for you and your common space to quickly write a note, or quickly send a video message to us for fast communication using our Bomb bomb video messaging system.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="width m-vh" style="margin-top: 30px;">
+                    <div class="row g-0">
+                        <marquee  behavior="slide" direction="down" loop="1" class="width">
+                            <img class="img-fluid" src="tablet.jpg" width="800" alt="organize">
+                        </marquee>
+                    </div>
+                </div>
+            </div>
+            <div class="sub-content5">We believe that transparency and guiding you and your family through the process is key to having the best experience.  During these uncertain times. It is a good feeling to know you have some one with a proven track record you can count on.  We will be here to handle your needs during the Real Estate process.  We think of it before a need even arises. Because, that is just what we do.  Who you work with does matter! </div>
+        </div>
+    </section>
+
+    <section class="home-interior6 py-5 my-5">
+        <div class="container w-75 position-relative" style="max-width: 600px;">
+        </div>
+    </section>
+
+    <section class="py-5 my-5">
+        <div class="container">
+            <h1 class="text-center uppercase pb-5 display-6 mb-5 px-4">We Market Your Home to The World</h1>
+            <div class="text-center pb-3" style="margin-top: -50px; font-size: 2vw;">Our Online Marketing Strategy</div>
+            <p class="card-text card-text-font-size center">The Bay Area remains one of the world's most sought-after regions to live in, and when looking to sell, it is vital that your home be marketed online to audiences locally, nationally, and internationally.</p>
+            <div class="flex place-content-center pd-vh" style="margin-top: 20px;">
+                <div class="width m-vh">
+                    <div class="card-title card-title-font-size center" style="text-decoration:underline; font-size: 1.7vw;">Local Exposure</div>
+                    <p class="sub-content4" style="text-align: justify; font-size: 1vw;">Through our partnership with Nextdoor, the private online social network now used in over 80% of U.S. neighborhoods and virtually all Bay Area neighborhoods, we make sure your home receives targeted local exposure. When you list your home with Hansen Partners it will automatically appear on Nextdoor in your neighborhood.</p>
+                </div>
+                <div class="width m-vh">
+                    <div class="card-title card-title-font-size center" style="text-decoration:underline; font-size: 1.7vw;">National Exposure</div>
+                    <p class="sub-content4" style="text-align: justify; font-size: 1vw;">We secure strategic positioning and enhancement on Realtor.com, Trulia, and Zillow, driving more consumers to your home and increasing exposure. We  will receive every inquiry about your property directly.</p>
+                </div>
+                <div class="width m-vh">
+                    <div class="card-title card-title-font-size center" style="text-decoration:underline; font-size: 1.7vw;">International Exposure</div>
+                    <p class="sub-content4" style="text-align: justify; font-size: 1vw;">To expose your luxury listing to millions of potential homebuyers worldwide, we promote on prominent international real estate portals, including: Wall Street Journal, LuxuryPortfolio.com, LuxuryRealEstate.com, LeadingRE.com, UniqueHomes.com, 
+                        China.apr.com, Caimeiju, Juwai, Country Life UK</p>
+                </div>
+            </div>
+            <img class="img-fluid" src="logos.jpg" width="200" alt="organize">
+        </div>
+    </section>
+
+    <section class="home-interior7 py-5 my-5">
+        <div class="container w-75 position-relative" style="max-width: 600px;">
+        </div>
+    </section>
+
+    <section class="py-5 my-5">
+        <div class="container">
+            <h1 class="text-center uppercase pb-5 display-6 mb-5 px-4">Our partners in luxury</h1>
+            <div class="flex center" style="margin-top: -50px;">
+                <div>
+                    <marquee  behavior="slide" direction="down" loop="1">
+                        <img class="img-fluid" src="luxury-portfolio.jpg" width="200" alt="organize">
+                    </marquee>
+                    <marquee  behavior="slide" direction="down" loop="1" >
+                        <img class="img-fluid" src="leading.jpg" width="200" alt="organize">
+                    </marquee>
+                    <marquee  behavior="slide" direction="down" loop="1" >
+                        <img class="img-fluid" src="Whoswho.jpg" width="200" alt="organize">
+                    </marquee>
+                </div>
+                <div>
+                    <div class="sub-content4">JRockcliff is a founding member of Luxury Portfolio International®, the luxury division of Leading Real Estate Companies of the World®. With more than 500 member firms around the world, Our luxury listings are exposed to a vast global audience and reach potential buyers and investors in over 50 countries.</div>
+                    <div class="sub-content4">Leading Real Estate Companies of The World® & Luxury Portfolio International</div>
+                    <div class="sub-content4">Who's Who in Luxury Real Estate</div>
+                    <div class="sub-content4">Who’s Who in Luxury Real Estate is a global collection of luxury real estate brokers.</div>
+                </div>
+            </div>
+            <div class="sub-content4">Through our international affiliations, we have a strong presence in over 50 countries. Our luxury listings are sent to prominent international real estate sites, reaching over 70 million potential buyers and investors worldwide through our relationships with:</div>
+            <div class="flex">
+                <div>
+                    <div class="sub-content4">We also have several well-positioned affiliate offices in China, providing our clients with access to buyers in Hong Kong, Shanghai, and Beijing. </div>
+                </div>
+                <div class="width flex">
+                    <marquee  behavior="slide" direction="down" loop="1">
+                        <img class="img-fluid" src="luxury-portfolio.jpg" width="200" alt="organize">
+                    </marquee>
+                    <marquee  behavior="slide" direction="down" loop="1" >
+                        <img class="img-fluid" src="leading.jpg" width="200" alt="organize">
+                    </marquee>
+                    <marquee  behavior="slide" direction="down" loop="1" >
+                        <img class="img-fluid" src="Whoswho.jpg" width="200" alt="organize">
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-interior8 py-5 my-5">
+        <div class="container w-75 position-relative" style="max-width: 600px;">
+        </div>
+    </section>
+
+    <section class="py-5 my-5">
+        <div class="container">
+            <h1 class="text-center uppercase pb-5 display-6 mb-5 px-4">Work with us</h1>
+            <div class="sub-content2" style="font-size: 1.2vw;">With decades of experience in luxurious Tri Valley real estate, our team is here to ensure that your dreams are a reality. Let us guide you through your home buying journey, contact us today!</div>
+            <div class="text-center m-vh" style="margin-top: 30px;">
+                <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal1">Contact Us</button>
+            </div>
+            <div class="modal fade z-index" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-lg">
+                    <div class="modal-content" style="padding: 5vh;">
+                        <div class="flex">
+                            <div class="width text-center" style="margin-right: 5vh;">
+                                <img class="img-fluid" src="icon123.png" width="230" alt="organize" style="margin-top: 50px;">
+                                <div class="header-title3 uppercase" style="padding-top:0.7vh;">address | contact information</div>
+                                <div class="sub-content6">(925) 553-6707
+                                luxuryhomesinwc@icloud.com
+                                <br>
+                                4337 Chabot Drive, Pleasanton, 
+                                CA 94588Julie Hansen-Orvis
+                                <br>
+                                CA DRE# 00934447
+                                </div>
+                            </div>
+                            <div class="width">
+                                <div class="sub-content7 text-center uppercase pb-5 display-6 mb-5 px-4">Get in touch</div>
+                                <form style="margin-top:-50px; color: #000;">
+                                    <div class="form-group" style="margin: 5px;">
+                                      <label for="exampleInputEmail1">Name</label>
+                                      <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name">
+                                    </div>
+                                    <div class="form-group" style="margin: 5px;">
+                                        <label for="exampleInputEmail1">Phone</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Phone">
+                                    </div>
+                                    <div class="form-group" style="margin: 5px;">
+                                        <label for="exampleInputEmail1">Email</label>
+                                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Email">
+                                    </div>
+                                    <div class="form-group" style="margin: 5px;">
+                                      <label for="exampleInputPassword1">Message</label>
+                                      <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Message">
+                                    </div>
+                                    <div class="mb-3 form-check" style="padding-top: 10px;">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1" style="font-size: 1.2vh;" >
+                                            By providing Julie Hansen Partnership your contact information, you acknowledge and agree to our <a href="https://hansenpartners.net/terms-and-conditions" style="color:#000;">Privacy Policy</a> and consent to receiving marketing communications, including through automated calls, texts, and emails, some of which may use artificial or prerecorded voices. This consent isn’t necessary for purchasing any products or services and you may opt out at any time. To opt out from texts, you can reply, ‘stop’ at any time. To opt out from emails, you can click on the unsubscribe link in the emails. Message and data rates may apply.</label>
+                                    </div>
+                                    <button type="submit" class="btn btn-dark" style="">Submit</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-interior9 py-5 my-5">
+        <div class="container w-75 position-relative" style="max-width: 600px;">
+        </div>
+    </section>
+
+    <section class="py-5 my-5">
+        <div class="container">
+            <h1 class="text-center uppercase pb-5 display-6 mb-5 px-4">Julie Hansen Partnership</h1>
+            <div class="sub-content2" style="font-size: 1.2vw;">An elite group of the East Bay’s most talented and visionary real estate professionals believed buyers and sellers deserved more from their real estate company. More service. More resources. More integrity. More global reach. In a word, more of everything people should expect when they buy or sell their homes.</div>
+            <div class="flex">
+                <div class="flex width">
+                    <div class="width">
+                        <div class="header-title3 uppercase">Address</div>
+                        <div class="sub-content6">4733 Chatbot Drive #100
+                            Pleasanton, CA 94588
+                        </div>
+                        <br>
+                        <div class="sub-content6">​​​​​​​Julie Hansen-Orvis | CA DRE# 00934447
+                        </div>
+                    </div>
+                    <div class="width">
+                        <div class="header-title3 uppercase">contact information</div>
+                        <div class="sub-content6">(925) 553-6707
+                            luxuryhomesinwc@icloud.com
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="width">
+                    <div class="header-title3 uppercase">Newsletter</div>
+                    <div class="sub-content6">Subscribe to our Newsletter for latest news and updates. Stay tuned! </div>
+                    <input class="newsletter-email" type="email" placeholder="Email Address">
+                    <button type="button" class="btn btn-dark" style="margin-top: 20px;">Subscribe</button>
+                </div>
+            </div>
+            <div class="flex">
+                <div class="flex width" style="margin-top: 50px;">
+                    <a href="#"><i class="bi bi-facebook"></i></a>
+                    <a href="#"><i class="bi bi-instagram"></i></a>
+                    <a href="#"><i class="bi bi-linkedin"></i></a>
+                </div>
+                <div class="flex width" style="margin-top: 50px;">
+                    <img class="img-fluid" src="realtor.jpg" width="50" height="50" alt="organize" style="padding: 10px;">
+                    <img class="img-fluid" src="equal.jpg" width="50" height="50" alt="organize" style="padding: 10px;">
+                    <img class="img-fluid" src="sereno.jpg" width="100" height="10" alt="organize" style="padding: 10px;">
+                </div>
+            </div>
+            <div class="flex">
+                <div class="sub-content6 width" style="margin-top: 20px;">Copyright 2024 | Privacy Policy</div>
+                <div class="sub-content6 width" style="margin-top: 20px;">Website Designed & Developed by Luxury Presence.</div>
+            </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        const navbar = document.getElementById("navbar");
+        const navBtn = document.getElementById("navBtn");
+        let bol = false;
+        const offset = 90;
+
+        window.addEventListener("scroll", ()=>{
+            if (pageYOffset > offset && bol === false){
+                navbar.classList.add("bg-blk");
+                navbar.classList.remove("navbar-light");
+                navbar.classList.add("navbar-light");
+
+                navbar.style.boxShadow = "0px 5px 15px rgba(0, 0, 0, 0.3)";
+
+                bol = true;
+            } else if (pageYOffset <= offset && bol === true){
+                navbar.classList.remove("bg-blk");
+                navbar.classList.remove("navbar-light");
+                navbar.classList.add("navbar-light");
+                navbar.style.boxShadow = "none";
+
+                bol = false;
+            }
+        });
+
+    </script>
+    
+    <script type="text/javascript">
+        const myModal = document.getElementById('myModal')
+        const myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', () => {
+        myInput.focus()
+        })
+
+        const myModal1 = document.getElementById('myModal1')
+        const myInput1 = document.getElementById('myInput1')
+
+        myModal1.addEventListener('shown.bs.modal', () => {
+        myInput1.focus()
+        })
+    </script>
+
+    <script>
+        var xValues = ["Initial Consultation & Planning", "Device & Execute Marketing Plan", "Review Offers & Reach Agreement with Buyer", "Complete Transaction Process", "After-Sale Service"];
+        var yValues = [1, 2, 3, 4, 5, 0];
+        var barColors = ["#a39a9f", "#aaa7ad","#e6cfc4","#d5ccc3","#ac6c54"];
+        
+        new Chart("myChart", {
+        type: "bar",
+        data: {
+            labels: xValues,
+            datasets: [{
+            backgroundColor: barColors,
+            data: yValues
+            }]
+        },
+        options: {
+            legend: {display: false},
+            title: {
+            display: true,
+            text: "SALES"
+            }
+        }
+        });
+    </script>
+
+    <script>
+        var xValues = ["Initial Consultation & Planning", "Search for a Home & Get Pre-Approved", "Submit An Offer", "Complete Settlement Process"];
+        var yValues = [1, 2, 3, 4, 0];
+        var barColors = ["#9e7151", "#c9aa68","#d3bc7c","#9d6633"];
+        
+        new Chart("myChart2", {
+        type: "bar",
+        data: {
+            labels: xValues,
+            datasets: [{
+            backgroundColor: barColors,
+            data: yValues
+            }]
+        },
+        options: {
+            legend: {display: false},
+            title: {
+            display: true,
+            text: "SALES"
+            }
+        }
+        });
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</html>
